@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+@theme {
+  /* Deep navy base, cool white surfaces, one warm accent. */
+  --color-ink: #0a1422;
+  --color-ink-2: #0f1c2f;
+  --color-steel: #1a2a41;
+  --color-steel-2: #31465f;
+  --color-fog: #8fa0b5;
+  --color-mist: #f3f5f8;
+  --color-paper: #ffffff;
+  --color-accent: #dc4a1f; /* fills; white text passes AA on it */
+  --color-accent-soft: #ff7f57; /* accent text on navy */
+  --color-accent-deep: #b3380f; /* accent text on light, hover fill */
+
+  --font-display: var(--font-bricolage), system-ui, sans-serif;
+  --font-serif: var(--font-instrument), Georgia, serif;
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --radius-card: 1.5rem;
+
+  --animate-marquee: marquee 48s linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  background: var(--color-ink);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-mist);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 3px;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@layer components {
+  .wrap {
+    width: 100%;
+    max-width: 1360px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 3rem);
+  }
+
+  /* Display: a characterful grotesque, set tight. */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+  /* Emphasis inside display type: an italic serif in the accent colour. */
+  .em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    font-size: 1.08em;
+    color: var(--color-accent-soft);
+    padding-right: 0.06em;
+  }
+  .on-light .em {
+    color: var(--color-accent-deep);
+  }
+
+  .h-page {
+    font-size: clamp(2.7rem, 6.2vw, 5.6rem);
+  }
+  .h-section {
+    font-size: clamp(2.2rem, 4.2vw, 3.75rem);
+  }
+  .h-card {
+    font-size: clamp(1.35rem, 1.8vw, 1.7rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+
+  /* Small label. */
+  .tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+    border-radius: 999px;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+  .chip::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 999px;
+    background: var(--color-accent);
+  }
+
+  .card {
+    border-radius: var(--radius-card);
+    border: 1px solid color-mix(in srgb, var(--color-mist) 12%, transparent);
+    background: var(--color-ink-2);
+  }
+  .on-light .card {
+    border-color: color-mix(in srgb, var(--color-ink) 10%, transparent);
+    background: var(--color-paper);
+  }
+
+  .lede {
+    font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
+    line-height: 1.6;
+  }
+
+  /* Unconfirmed copy from the content brief. */
+  .ph {
+    border-bottom: 1px dashed var(--color-accent-soft);
+  }
+  .on-light .ph {
+    border-bottom-color: var(--color-accent-deep);
+  }
+
+  .blueprint {
+    background-image:
+      linear-gradient(to right, color-mix(in srgb, currentColor 6%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in srgb, currentColor 6%, transparent) 1px, transparent 1px);
+    background-size: 72px 72px;
+  }
+
+  .on-light {
+    background: var(--color-mist);
+    color: var(--color-ink);
+  }
+
+  .rule {
+    border-color: color-mix(in srgb, currentColor 14%, transparent);
+  }
+  .muted {
+    color: color-mix(in srgb, currentColor 68%, transparent);
+  }
+
+  .split-word {
+    display: inline-block;
+    will-change: transform;
+  }
+
+  .field {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 28%, transparent);
+    padding: 0.85rem 0;
+    font-size: 1rem;
+    color: inherit;
+    border-radius: 0;
+    transition: border-color 0.2s;
+  }
+  .field:focus {
+    outline: none;
+    border-bottom-color: var(--color-accent-soft);
+  }
+  .field::placeholder {
+    color: color-mix(in srgb, currentColor 40%, transparent);
+  }
+  select.field option {
+    color: var(--color-ink);
+  }
+}
+
+/* Pre-animation states. The `js` class is set by an inline script in <head>,
+   so content stays visible if scripts never run. */
+.js [data-reveal],
+.js [data-reveal-stagger] > * {
+  opacity: 0;
+  transform: translateY(28px);
+}
+.js .split-word {
+  transform: translateY(115%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js [data-reveal],
+  .js [data-reveal-stagger] > * {
+    opacity: 1;
+    transform: none;
+  }
+  .js .split-word {
+    transform: none;
+  }
+}

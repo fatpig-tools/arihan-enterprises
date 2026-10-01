@@ -1,0 +1,25 @@
+{
+  "name": "arihan-studio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "schema:deploy": "sanity schema deploy",
+    "seed": "sanity exec seed/seed.ts --with-user-token",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sanity/vision": "latest",
+    "react": "^19",
+    "react-dom": "^19",
+    "sanity": "latest",
+    "styled-components": "^6"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}
