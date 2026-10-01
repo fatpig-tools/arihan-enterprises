@@ -1,7 +1,7 @@
 import * as content from "@/content/site";
 import { getClients, getCranes, getIndustries, getPage, getServices, getSettings } from "@/lib/data";
 import { pageMeta } from "@/lib/meta";
-import { HomeHero } from "@/components/home/HomeHero";
+import { Story } from "@/components/home/Story";
 import { OneContract } from "@/components/home/OneContract";
 import { ServicesBento } from "@/components/home/ServicesBento";
 import { WhyBento } from "@/components/home/WhyBento";
@@ -41,16 +41,16 @@ export default async function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-      <HomeHero headline={page.headline} intro={page.intro} />
+      <Story headline={page.headline} intro={page.intro} />
 
       {/* Who we are */}
-      <section className="on-light rounded-t-[2rem] py-24 md:py-32">
+      <section className="on-light py-24 md:py-32">
         <div className="wrap">
           <div className="grid items-center gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
             <div>
               <p className="chip mb-6">Who we are</p>
               <SplitHeading
-                text="We don't just rent machines — we take *responsibility* for getting the work done."
+                text="We answer for the *work,* not only the machine."
                 className="text-[clamp(2.3rem,4.1vw,3.75rem)]"
               />
               <Reveal stagger className="mt-8 space-y-4">

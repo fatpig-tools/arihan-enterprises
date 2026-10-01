@@ -16,3 +16,5 @@ All footage and photos are from Pexels (free for commercial use, https://www.pex
 - p-site-walk.jpg: Pexels photo 8961260 by Mikael Blomkvist — https://www.pexels.com/photo/people-with-hard-hard-standing-on-the-construction-site-8961260/
 - p-bridge-aerial.jpg: Pexels photo 11701517 by Daniel Ellis — https://www.pexels.com/photo/birds-eye-view-of-a-construction-site-11701517/
 - sky.mp4: Pexels video 9343478 by 岳威 梁 — https://www.pexels.com/video/video-of-metals-hanging-in-the-crane-9343478/
+- story/1–5.jpg: illustrations generated with Canva AI image generation for this site (not photographs of Arihan equipment).
+- story/story.mp4: animated from those five illustrations by `scripts/render-story.py` (camera flight, trailer, survey line and lift).
