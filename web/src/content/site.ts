@@ -9,7 +9,6 @@ export type Crane = {
   kind: "truck" | "crawler";
   type: string;
   capacityTonnes: number;
-  regNo: string;
   bestFor: string;
 };
 export type Service = {
@@ -272,7 +271,6 @@ export const cranes: Crane[] = [
     kind: "truck",
     type: "Hydraulic truck crane",
     capacityTonnes: 45,
-    regNo: "MH04KR0817",
     bestFor: "Quick-mobilising lifts, plant maintenance, material handling",
   },
   {
@@ -281,7 +279,6 @@ export const cranes: Crane[] = [
     kind: "truck",
     type: "Hydraulic truck crane",
     capacityTonnes: 80,
-    regNo: "MH46AB0191",
     bestFor: "Structural erection, equipment installation, heavier lifts",
   },
   {
@@ -290,7 +287,6 @@ export const cranes: Crane[] = [
     kind: "crawler",
     type: "Lattice-boom crawler crane",
     capacityTonnes: 100,
-    regNo: "CC0100CF1758",
     bestFor: "Heavy lifts, long-duration project sites, soft or uneven ground",
   },
 ];

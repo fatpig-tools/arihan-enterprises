@@ -11,7 +11,7 @@ export const PAGE_QUERY = defineQuery(`*[_type == "page" && slug.current == $slu
 }`);
 
 export const CRANES_QUERY = defineQuery(`*[_type == "crane"] | order(capacityTonnes asc){
-  "slug": slug.current, name, kind, type, capacityTonnes, regNo, bestFor
+  "slug": slug.current, name, kind, type, capacityTonnes, bestFor
 }`);
 
 export const SERVICES_QUERY = defineQuery(`*[_type == "service"] | order(order asc){

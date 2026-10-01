@@ -52,7 +52,6 @@ export function FleetLadder({ cranes }: { cranes: Crane[] }) {
           <h3 className="display h-card mt-5">{crane.name}</h3>
           <p className="mt-1 text-sm opacity-60">{crane.type}</p>
           <p className="mt-4 flex-1 opacity-80">{crane.bestFor}</p>
-          <p className="mt-6 border-t border-current/10 pt-4 font-mono text-xs tracking-[0.12em] opacity-60">{crane.regNo}</p>
         </article>
       ))}
     </div>

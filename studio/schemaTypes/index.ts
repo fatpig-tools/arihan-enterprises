@@ -90,7 +90,6 @@ export const crane = defineType({
     }),
     defineField({ name: "type", type: "string", description: "e.g. Hydraulic truck crane", validation: (rule) => rule.required() }),
     defineField({ name: "capacityTonnes", title: "Max lifting capacity (tonnes)", type: "number", validation: (rule) => rule.required().positive() }),
-    defineField({ name: "regNo", title: "Registration / serial no.", type: "string" }),
     defineField({ name: "bestFor", type: "string" }),
   ],
   preview: { select: { title: "name", subtitle: "type" } },
