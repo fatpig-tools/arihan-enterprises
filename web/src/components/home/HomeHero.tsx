@@ -184,7 +184,7 @@ export function HomeHero({ headline, intro }: { headline: string; intro: string 
             as="h1"
             text="Heavy Machinery on *Hire.* Project Work on *Contract.*"
             delay={0.55}
-            className="max-w-[12ch] text-[clamp(2.6rem,min(4.9vw,9.5svh),4.7rem)]"
+            className="max-w-[8.4em] text-[clamp(2.9rem,min(5.2vw,10svh),4.9rem)]"
           />
           <p className="sr-only">{headline}</p>
           <p className="lede mt-7 max-w-md text-mist/85">{intro}</p>

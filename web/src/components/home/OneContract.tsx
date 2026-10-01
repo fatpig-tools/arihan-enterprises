@@ -55,7 +55,7 @@ export function OneContract() {
           <g key={n.title} className="oc-node">
             <rect x="20" y={n.y} width="180" height="64" rx="16" fill="var(--color-paper)" stroke="var(--color-ink)" strokeOpacity="0.12" />
             <circle cx="46" cy={n.y + 32} r="5" fill="var(--color-accent)" />
-            <text x="62" y={n.y + 29} fontSize="16" fontWeight="600" fill="var(--color-ink)" style={{ fontFamily: "var(--font-display)" }}>
+            <text x="62" y={n.y + 29} fontSize="16" fontWeight="500" fill="var(--color-ink)" style={{ fontFamily: "var(--font-sans)" }}>
               {n.title}
             </text>
             <text x="62" y={n.y + 47} fontSize="11.5" fill="var(--color-ink)" fillOpacity="0.6">
@@ -67,17 +67,17 @@ export function OneContract() {
         <g className="oc-hub">
           <circle cx="340" cy="220" r="46" fill="var(--color-ink)" />
           <circle cx="340" cy="220" r="56" fill="none" stroke="var(--color-accent)" strokeOpacity="0.5" strokeDasharray="2 6" />
-          <text x="340" y="216" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-mist)" style={{ fontFamily: "var(--font-display)" }}>
+          <text x="340" y="216" textAnchor="middle" fontSize="14" fontWeight="500" fill="var(--color-mist)" style={{ fontFamily: "var(--font-sans)" }}>
             One
           </text>
-          <text x="340" y="233" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-mist)" style={{ fontFamily: "var(--font-display)" }}>
+          <text x="340" y="233" textAnchor="middle" fontSize="14" fontWeight="500" fill="var(--color-mist)" style={{ fontFamily: "var(--font-sans)" }}>
             contract
           </text>
         </g>
 
         <g className="oc-out">
           <rect x="450" y="170" width="170" height="100" rx="18" fill="var(--color-accent)" />
-          <text x="535" y="216" textAnchor="middle" fontSize="18" fontWeight="600" fill="#fff" style={{ fontFamily: "var(--font-display)" }}>
+          <text x="535" y="216" textAnchor="middle" fontSize="18" fontWeight="500" fill="#fff" style={{ fontFamily: "var(--font-sans)" }}>
             Your project
           </text>
           <text x="535" y="238" textAnchor="middle" fontSize="12" fill="#fff" fillOpacity="0.85">

@@ -8,8 +8,8 @@ export function Logo({ className }: { className?: string }) {
         <rect width="32" height="32" rx="9" fill="var(--color-accent)" />
         <path d="M16 4v9M11 13h10v5H11zM16 18v3a4 4 0 1 1-4 4" fill="none" stroke="#fff" strokeWidth="2.6" strokeLinecap="square" />
       </svg>
-      <span className="font-display text-[1.3rem] font-semibold leading-none tracking-tight">
-        Arihan <span className="font-serif text-[1.25em] font-normal italic opacity-70">Enterprises</span>
+      <span className="font-display text-[1.35rem] font-semibold uppercase leading-none tracking-[0.2em]">
+        Arihan<span className="ml-2 hidden font-sans text-[0.6rem] font-normal tracking-[0.3em] opacity-60 sm:inline">Enterprises</span>
       </span>
     </span>
   );

@@ -54,7 +54,7 @@ export function Nav({ phone, email }: { phone: string; email: string }) {
                   href={item.href}
                   aria-current={pathname === item.href ? "page" : undefined}
                   className={cn(
-                    "rounded-full px-3.5 py-2 text-sm transition-colors hover:bg-mist/10",
+                    "rounded-full px-3.5 py-2 text-[0.7rem] uppercase tracking-[0.18em] transition-colors hover:bg-mist/10",
                     pathname === item.href ? "bg-mist/10 text-mist" : "text-mist/70",
                   )}
                 >
@@ -66,7 +66,7 @@ export function Nav({ phone, email }: { phone: string; email: string }) {
             <div className="flex items-center gap-2">
               <Link
                 href="/contact"
-                className="hidden min-h-11 items-center rounded-full bg-accent px-5 text-sm font-medium text-white transition-colors hover:bg-accent-deep sm:inline-flex"
+                className="hidden min-h-11 items-center rounded-full bg-accent px-5 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-white transition-colors hover:bg-accent-deep sm:inline-flex"
               >
                 Get a Quote
               </Link>

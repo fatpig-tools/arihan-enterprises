@@ -38,7 +38,7 @@ Projects and testimonials appear once they are added in the Studio.
 
 | What | Where |
 | --- | --- |
-| Design tokens and type (Bricolage Grotesque, Instrument Serif italic, Geist) | `web/src/app/globals.css` |
+| Design tokens and type (Cormorant Garamond with italic emphasis, Jost) | `web/src/app/globals.css` |
 | Footage and photos (Pexels; credits in `CREDITS.md`) | `web/public/media/` |
 | Scroll-to-lift hero (SVG elevation drawing) | `web/src/components/home/HomeHero.tsx` |
 | Lottie icons (generated) | `node web/scripts/make-lottie.mjs` → `web/src/lottie/` |

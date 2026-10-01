@@ -51,7 +51,7 @@ export default async function Home() {
               <p className="chip mb-6">Who we are</p>
               <SplitHeading
                 text="We don't just rent machines — we take *responsibility* for getting the work done."
-                className="text-[clamp(2rem,3.6vw,3.25rem)]"
+                className="text-[clamp(2.3rem,4.1vw,3.75rem)]"
               />
               <Reveal stagger className="mt-8 space-y-4">
                 <p className="lede muted">{sentences[0]}</p>

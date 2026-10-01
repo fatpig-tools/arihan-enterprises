@@ -43,7 +43,7 @@ export function Button({ href, children, variant = "solid", className, external 
       style={{ x, y }}
       whileTap={{ scale: 0.97 }}
       className={cn(
-        "group inline-flex min-h-12 cursor-pointer items-center gap-3 rounded-full py-1.5 pl-6 pr-1.5 text-[0.95rem] font-medium transition-colors duration-200",
+        "group inline-flex min-h-12 cursor-pointer items-center gap-3 rounded-full py-1.5 pl-6 pr-1.5 text-[0.75rem] font-medium uppercase tracking-[0.18em] transition-colors duration-200",
         styles[variant],
         className,
       )}
