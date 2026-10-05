@@ -5,8 +5,8 @@ import { writeFileSync, mkdirSync } from "node:fs";
 const OUT = new URL("../src/lottie/", import.meta.url);
 mkdirSync(OUT, { recursive: true });
 
-const AMBER = [1, 0.498, 0.341, 1];
-const GREY = [0.561, 0.627, 0.71, 1];
+const AMBER = [0.949, 0.718, 0.02, 1];
+const GREY = [0.561, 0.663, 0.749, 1];
 const FR = 30;
 const W = 5;
 

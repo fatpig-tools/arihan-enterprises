@@ -34,10 +34,10 @@ export function Process({ steps, heading }: { steps: readonly Step[]; heading: s
         });
         gsap.fromTo(
           step.querySelector(".process-dot"),
-          { scale: 0.4, backgroundColor: "#1a2a41" },
+          { scale: 0.4, backgroundColor: "#262d35" },
           {
             scale: 1,
-            backgroundColor: "#dc4a1f",
+            backgroundColor: "#f2b705",
             duration: 0.5,
             scrollTrigger: { trigger: step, start: "top 65%", toggleActions: "play none none reverse" },
           },
@@ -62,7 +62,7 @@ export function Process({ steps, heading }: { steps: readonly Step[]; heading: s
             >
               <span
                 className={cn(
-                  "process-dot absolute left-5 top-8 flex size-9 -translate-x-1/2 items-center justify-center rounded-full bg-accent text-sm font-semibold text-white",
+                  "process-dot absolute left-5 top-8 flex size-9 -translate-x-1/2 items-center justify-center rounded-full bg-accent text-sm font-semibold text-ink",
                   i % 2 ? "lg:left-0" : "lg:left-full",
                 )}
               >

@@ -14,9 +14,9 @@ type Props = {
 };
 
 const styles = {
-  solid: "bg-accent text-white hover:bg-accent-deep",
+  solid: "bg-accent text-ink hover:bg-accent-deep",
   outline: "border border-current/30 hover:border-current/70",
-  ink: "bg-ink text-white hover:bg-steel",
+  ink: "bg-ink text-mist hover:bg-steel",
 };
 
 /** Call-to-action link that leans toward the pointer. */

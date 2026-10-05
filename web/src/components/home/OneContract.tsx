@@ -77,10 +77,10 @@ export function OneContract() {
 
         <g className="oc-out">
           <rect x="450" y="170" width="170" height="100" rx="18" fill="var(--color-accent)" />
-          <text x="535" y="216" textAnchor="middle" fontSize="18" fontWeight="500" fill="#fff" style={{ fontFamily: "var(--font-sans)" }}>
+          <text x="535" y="216" textAnchor="middle" fontSize="18" fontWeight="500" fill="var(--color-ink)" style={{ fontFamily: "var(--font-sans)" }}>
             Your project
           </text>
-          <text x="535" y="238" textAnchor="middle" fontSize="12" fill="#fff" fillOpacity="0.85">
+          <text x="535" y="238" textAnchor="middle" fontSize="12" fill="var(--color-ink)" fillOpacity="0.85">
             Work on schedule
           </text>
         </g>
@@ -101,7 +101,7 @@ export function OneContract() {
                     "oc-pill rounded-full px-3 py-1.5 text-sm",
                     i < row.upTo
                       ? row.upTo === 4
-                        ? "bg-accent text-white"
+                        ? "bg-accent text-ink"
                         : "bg-ink text-mist"
                       : "border border-dashed border-ink/25 text-ink/45",
                   )}

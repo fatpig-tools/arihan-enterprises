@@ -21,7 +21,7 @@ export default async function Safety() {
       <section className="on-light py-24 md:py-32">
         <div className="wrap grid items-center gap-12 lg:grid-cols-[1.2fr_1fr] lg:gap-20">
           <div>
-            <p className="tag mb-6 text-accent-deep">Our rule</p>
+            <p className="tag mb-6 text-accent-ink">Our rule</p>
             <Reveal>
               <p className="display text-[clamp(2.6rem,5.6vw,5.25rem)]">No deadline is worth an accident.</p>
             </Reveal>
@@ -57,7 +57,7 @@ export default async function Safety() {
           <Reveal stagger as="ul" className="rule border-t">
             {safety.documents.map((doc) => (
               <li key={doc} className="rule display flex items-center gap-5 border-b py-5 text-2xl">
-                <span className="size-1.5 shrink-0 rounded-full bg-accent-deep" aria-hidden="true" />
+                <span className="size-1.5 shrink-0 rounded-full bg-accent-ink" aria-hidden="true" />
                 <span>
                   <Rich>{doc}</Rich>
                 </span>

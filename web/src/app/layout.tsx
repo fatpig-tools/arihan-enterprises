@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: { siteName: "Arihan Enterprises", type: "website", locale: "en_IN" },
 };
 
-export const viewport: Viewport = { themeColor: "#0a1422" };
+export const viewport: Viewport = { themeColor: "#111417" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

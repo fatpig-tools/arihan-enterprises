@@ -175,7 +175,7 @@ export function QuoteForm({ phone }: { phone: string }) {
                     key={o}
                     className={cn(
                       "flex min-h-11 cursor-pointer items-center border px-5 font-display text-base font-semibold uppercase tracking-[0.06em] transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-accent",
-                      on ? "border-accent bg-accent text-white" : "border-mist/25 hover:border-accent",
+                      on ? "border-accent bg-accent text-ink" : "border-mist/25 hover:border-accent",
                     )}
                   >
                     <input
@@ -238,7 +238,7 @@ export function QuoteForm({ phone }: { phone: string }) {
               type="submit"
               disabled={status === "sending"}
               whileTap={{ scale: 0.97 }}
-              className="min-h-14 cursor-pointer bg-accent px-9 font-display text-lg font-semibold uppercase tracking-[0.08em] text-white transition-colors hover:bg-accent-deep disabled:cursor-wait disabled:opacity-60"
+              className="min-h-14 cursor-pointer bg-accent px-9 font-display text-lg font-semibold uppercase tracking-[0.08em] text-ink transition-colors hover:bg-accent-deep disabled:cursor-wait disabled:opacity-60"
             >
               {status === "sending" ? "Sending…" : "Request My Quote"}
             </motion.button>

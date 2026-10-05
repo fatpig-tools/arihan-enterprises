@@ -66,7 +66,7 @@ export function Nav({ phone, email }: { phone: string; email: string }) {
             <div className="flex items-center gap-2">
               <Link
                 href="/contact"
-                className="hidden min-h-11 items-center rounded-full bg-accent px-5 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-white transition-colors hover:bg-accent-deep sm:inline-flex"
+                className="hidden min-h-11 items-center rounded-full bg-accent px-5 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:bg-accent-deep sm:inline-flex"
               >
                 Get a Quote
               </Link>

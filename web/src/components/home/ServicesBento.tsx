@@ -43,7 +43,7 @@ export function ServicesBento({ services }: { services: Service[] }) {
               </div>
             )}
             {tile.icon && <LottieIcon name={tile.icon} className="absolute left-6 top-6 size-20 md:left-8 md:top-8" />}
-            <span className="absolute right-5 top-5 flex size-11 items-center justify-center rounded-full bg-mist/12 backdrop-blur transition-all duration-300 group-hover:rotate-45 group-hover:bg-accent">
+            <span className="absolute right-5 top-5 flex size-11 items-center justify-center rounded-full bg-mist/12 backdrop-blur transition-all duration-300 group-hover:rotate-45 group-hover:bg-accent group-hover:text-ink">
               <ArrowUpRight aria-hidden="true" className="size-5" />
             </span>
             <div className="relative">

@@ -59,7 +59,7 @@ export default async function Careers() {
           <p className="lede mt-6 max-w-2xl">
             Send your CV and licence copy to{" "}
             {mail ? (
-              <a href={`mailto:${mail}`} className="font-semibold text-accent-deep underline underline-offset-4">
+              <a href={`mailto:${mail}`} className="font-semibold text-accent-ink underline underline-offset-4">
                 {mail}
               </a>
             ) : (
@@ -67,7 +67,7 @@ export default async function Careers() {
             )}{" "}
             or WhatsApp{" "}
             {wa ? (
-              <a href={`https://wa.me/${wa}`} className="font-semibold text-accent-deep underline underline-offset-4">
+              <a href={`https://wa.me/${wa}`} className="font-semibold text-accent-ink underline underline-offset-4">
                 {settings.whatsapp}
               </a>
             ) : (

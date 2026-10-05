@@ -1,17 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  /* Deep navy base, cool white surfaces, one warm accent. */
-  --color-ink: #0a1422;
-  --color-ink-2: #0f1c2f;
-  --color-steel: #1a2a41;
-  --color-steel-2: #31465f;
-  --color-fog: #8fa0b5;
-  --color-mist: #f3f5f8;
-  --color-paper: #ffffff;
-  --color-accent: #dc4a1f; /* fills; white text passes AA on it */
-  --color-accent-soft: #ff7f57; /* accent text on navy */
-  --color-accent-deep: #b3380f; /* accent text on light, hover fill */
+  /* Aretus palette: charcoal and asphalt, warm dust, steel blue, signal yellow. */
+  --color-ink: #111417; /* charcoal */
+  --color-ink-2: #1b2026; /* asphalt */
+  --color-steel: #262d35; /* graphite */
+  --color-steel-2: #3e5c76; /* steel */
+  --color-fog: #8fa9bf; /* steel light */
+  --color-mist: #e8e4dc; /* dust: light surfaces and text on dark */
+  --color-paper: #f4f1ea; /* cards on dust */
+  --color-accent: #f2b705; /* signal yellow; always carries ink text */
+  --color-accent-soft: #f2b705; /* accent text on dark */
+  --color-accent-deep: #c99600; /* hover fill */
+  --color-accent-ink: #7a5900; /* accent text on light (AA on dust) */
 
   --font-display: var(--font-cormorant), "Cormorant Garamond", Garamond, Georgia, serif;
   --font-serif: var(--font-cormorant), Garamond, Georgia, serif;
@@ -44,7 +45,7 @@ body {
 
 ::selection {
   background: var(--color-accent);
-  color: var(--color-paper);
+  color: var(--color-ink);
 }
 
 :focus-visible {
@@ -89,7 +90,7 @@ html.lenis body {
     padding-right: 0.05em;
   }
   .on-light .em {
-    color: var(--color-accent-deep);
+    color: var(--color-accent-ink);
   }
 
   .h-page {
@@ -149,7 +150,7 @@ html.lenis body {
     border-bottom: 1px dashed var(--color-accent-soft);
   }
   .on-light .ph {
-    border-bottom-color: var(--color-accent-deep);
+    border-bottom-color: var(--color-accent-ink);
   }
 
   .blueprint {

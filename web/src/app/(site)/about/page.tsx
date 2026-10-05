@@ -65,7 +65,7 @@ export default async function About() {
           <Reveal stagger className="grid gap-px bg-ink/15 sm:grid-cols-2 lg:grid-cols-4">
             {about.values.map((value, i) => (
               <div key={value.title} className="bg-mist p-8">
-                <p className="tag text-accent-deep">{String(i + 1).padStart(2, "0")}</p>
+                <p className="tag text-accent-ink">{String(i + 1).padStart(2, "0")}</p>
                 <h3 className="display h-card mt-10">{value.title}</h3>
                 <p className="muted mt-3">{value.body}</p>
               </div>

@@ -44,7 +44,7 @@ export function Sectors({ industries }: { industries: Industry[] }) {
             aria-pressed={active === i}
             className={cn(
               "relative min-h-12 cursor-pointer rounded-full px-5 text-[0.95rem] transition-colors duration-200",
-              active === i ? "text-white" : "border border-mist/15 text-mist/70 hover:text-mist",
+              active === i ? "text-ink" : "border border-mist/15 text-mist/70 hover:text-mist",
             )}
           >
             {active === i && (
