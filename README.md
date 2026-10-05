@@ -40,7 +40,7 @@ Projects and testimonials appear once they are added in the Studio.
 | --- | --- |
 | Design tokens and type (Cormorant Garamond with italic emphasis, Jost) | `web/src/app/globals.css` |
 | Footage and photos (Pexels; credits in `CREDITS.md`) | `web/public/media/` |
-| Scroll story film (rendered by `web/scripts/render-story.py`) | `web/src/components/home/Story.tsx`, `web/public/media/story/` |
+| Scroll-to-lift hero (SVG elevation drawing) | `web/src/components/home/HomeHero.tsx` |
 | Lottie icons (generated) | `node web/scripts/make-lottie.mjs` → `web/src/lottie/` |
 | Scroll animation helpers | `web/src/components/{Reveal,SplitHeading,Counter,Process}.tsx` |
 | Quote form and API route | `web/src/components/QuoteForm.tsx`, `web/src/app/api/quote/route.ts` |

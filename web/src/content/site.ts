@@ -72,7 +72,7 @@ export const settings: Settings = {
   legalName: "[Arihan Enterprises — proprietorship / partnership / LLP]",
   regions: "[States]",
   footerAbout:
-    "Arihan Enterprises hires out heavy machinery and takes on contract work for infrastructure, energy and industrial projects.",
+    "Arihan Enterprises — heavy machinery hire and contract-based project execution for infrastructure, energy and industry.",
   // Only figures the supplied content can back. Swap in fleet size, projects
   // delivered, years in operation and states served once they are confirmed.
   stats: [
@@ -95,34 +95,34 @@ export const pages: PageCopy[] = [
     slug: "home",
     headline: "Heavy Machinery on Hire. Project Work on Contract.",
     intro:
-      "Excavators, cranes, tippers and trailers with trained operators, brought to your site and run to your programme.",
+      "Excavators, cranes, tippers and trailers — with trained operators — mobilised to your site and managed to your schedule.",
     seoTitle: "Heavy Machinery on Hire & Contract Work | Arihan",
     seoDescription:
       "Excavators, cranes, tippers and trailers on hire with operators. Contract-based earthwork and haulage for infrastructure projects.",
   },
   {
     slug: "about",
-    headline: "We hire out machines and stay to finish the work.",
+    headline: "Built on Machines. Run on Commitment.",
     intro:
-      "We supply the machines, the operators and the site management that contractors and project owners need to finish on time.",
+      "We supply the machines, operators and site management that contractors and project owners need to deliver on time.",
     seoTitle: "About Arihan Enterprises | Machinery Hire Partner",
     seoDescription:
       "Arihan Enterprises supplies heavy equipment and executes contract work for infrastructure, energy and industrial projects.",
   },
   {
     slug: "services",
-    headline: "Machines, crew and the work itself, on one contract.",
+    headline: "Equipment, Crew and Execution — Under One Contract.",
     intro:
-      "Hire a machine, or hand us a whole package of work. You get maintained equipment, skilled operators and one company to hold responsible.",
+      "Choose a machine on hire, or hand us a complete work package. Either way, you get maintained equipment, skilled operators and a single point of accountability.",
     seoTitle: "Equipment Hire & Project Contract Services | Arihan",
     seoDescription:
       "Wet and dry hire, per-quantity earthwork, lifting, operators, maintenance and heavy transport under one contract.",
   },
   {
     slug: "fleet",
-    headline: "Our cranes, 45 to 100 tonnes.",
+    headline: "A Fleet Ready for Heavy Work.",
     intro:
-      "Two truck cranes and one crawler crane. We own, maintain and operate all three, so availability and service history are known and there is no middleman.",
+      "Our crane fleet spans 45 to 100 tonnes — from fast-moving truck cranes to a heavy crawler crane. Every unit is owned, maintained and operated by Arihan, so you get consistent availability, known service history and no middleman delays.",
     seoTitle: "Excavators, Cranes & Tippers for Hire | Arihan",
     seoDescription:
       "Browse our owned fleet of excavators, 45–100 t cranes, tippers and prime movers. Hourly, daily and monthly hire.",
@@ -131,16 +131,16 @@ export const pages: PageCopy[] = [
     slug: "industries",
     headline: "Where Our Machines Work.",
     intro:
-      "Our machines and crews work on projects with tight schedules and rough site conditions.",
+      "Our equipment and crews support projects where schedules are tight and site conditions are tough.",
     seoTitle: "Industries We Serve | Arihan Enterprises",
     seoDescription:
       "Machinery and crews for highways, oil & gas, power, railways, mining and industrial plant projects.",
   },
   {
     slug: "how-we-work",
-    headline: "How a job runs, in five steps.",
+    headline: "From Enquiry to Execution in Five Steps.",
     intro:
-      "One process, one contract, and a signed record at each stage.",
+      "A clear process, a clear contract and signed records at every stage.",
     seoTitle: "How We Work | Arihan Enterprises",
     seoDescription:
       "Five steps from enquiry to execution, and five contract models: hourly, monthly, per-quantity, lump-sum and dedicated fleet.",
@@ -149,34 +149,34 @@ export const pages: PageCopy[] = [
     slug: "projects",
     headline: "Work We've Delivered.",
     intro:
-      "Some of the projects where our machines and crews kept the schedule.",
+      "A selection of projects where Arihan machines and crews kept the schedule on track.",
     seoTitle: "Projects | Arihan Enterprises",
     seoDescription:
       "Projects where Arihan machines and crews kept infrastructure, energy and industrial schedules on track.",
   },
   {
     slug: "safety",
-    headline: "How we keep sites safe.",
+    headline: "Safe Machines. Trained People. Clean Paperwork.",
     intro:
-      "A machine is only as safe as the people running it and the checks behind it. These are ours.",
+      "Heavy equipment is only as safe as the people and processes behind it. Our safety standards are built into every deployment.",
     seoTitle: "Safety & Compliance | Arihan Enterprises",
     seoDescription:
       "Pre-deployment inspection, trained operators, load-tested cranes and complete vehicle and workforce compliance.",
   },
   {
     slug: "careers",
-    headline: "Work with us.",
+    headline: "Operate With the Best.",
     intro:
-      "We hire people who run heavy machines safely and take pride in doing it well. We pay on time, keep our equipment maintained and value experience.",
+      "We're always looking for skilled people who take pride in running heavy machines safely and well. Join a team that pays on time, maintains its equipment and values experience.",
     seoTitle: "Careers | Arihan Enterprises",
     seoDescription:
       "Jobs for crane and excavator operators, heavy vehicle drivers, mechanics, riggers and site supervisors.",
   },
   {
     slug: "contact",
-    headline: "Get a quote.",
+    headline: "Let's Get Your Project Moving.",
     intro:
-      "Send us a few details and we will reply with equipment options and rates within [24 hours]. If it is urgent, call or WhatsApp.",
+      "Share a few details and our team will respond with equipment options and rates within [24 hours]. For urgent requirements, call or WhatsApp us directly.",
     seoTitle: "Get a Quote for Equipment Hire | Arihan",
     seoDescription:
       "Share your requirement and get equipment options and rates within 24 hours. Call or WhatsApp for urgent needs.",
@@ -184,7 +184,7 @@ export const pages: PageCopy[] = [
 ];
 
 export const whoWeAre =
-  "Arihan Enterprises supplies heavy equipment and carries out contract work on infrastructure, industrial and energy projects. We take responsibility for the work, not only the machine. Our fleet, operators and site supervisors join your project, and you get on with delivery instead of managing equipment.";
+  "Arihan Enterprises supplies heavy equipment and executes contract-based work for infrastructure, industrial and energy projects. We don't just rent machines — we take responsibility for getting the work done. Our fleet, operators and site supervisors plug into your project so you can focus on delivery, not on managing equipment.";
 
 export const coreMessages = [
   { title: "Ready fleet, fast mobilisation", body: "Machines on site in [48–72 hours]." },
@@ -198,7 +198,7 @@ export const whyArihan = [
   { title: "Well-maintained fleet", body: "Regularly serviced machines with documented service history." },
   { title: "One accountable partner", body: "Machine, operator, fuel management and supervision under one contract." },
   { title: "Transparent billing", body: "Daily log sheets signed on site; no hidden charges." },
-  { title: "Safety", body: "Trained crews, valid fitness certificates and insurance on every unit." },
+  { title: "Safety first", body: "Trained crews, valid fitness certificates and insurance on every unit." },
 ];
 
 export const services: Service[] = [
@@ -221,7 +221,7 @@ export const services: Service[] = [
     short: "Contract Work Packages",
     summary:
       "Earthwork, material shifting, lifting and haulage executed on a per-quantity or lump-sum basis.",
-    body: "We take on a defined scope and deliver it against quantity, time and quality targets. You pay for output, not idle hours.",
+    body: "We take on defined scopes of work and deliver against quantity, time and quality targets — so you pay for output, not idle hours.",
     points: [
       "Bulk earthwork: excavation, cutting, filling, grading",
       "Material handling and shifting: soil, aggregate, overburden, debris",
@@ -296,7 +296,7 @@ export const fleetNote =
 
 export const hireTerms = [
   { term: "Minimum hire", detail: "[8 hours / 1 day / 1 month] depending on equipment" },
-  { term: "Rates", detail: "Hourly, daily, monthly or per-quantity, quoted per project" },
+  { term: "Rates", detail: "Hourly, daily, monthly, or per-quantity — quoted per project" },
   { term: "Included", detail: "Operator, routine maintenance, breakdown support (wet hire)" },
   {
     term: "Client scope (typical)",
@@ -397,15 +397,15 @@ export const testimonials: Testimonial[] = [];
 
 export const about = {
   story: [
-    "Arihan Enterprises started in [year] in [city] with [one/two] machines. We turned up on time and kept the work moving, contractors called us back, and the fleet grew.",
-    "Today we run [XX]+ units across [states/regions]: excavators, cranes, tippers and prime movers. Our clients are EPC contractors, infrastructure developers, oil and gas operators and logistics companies, on projects where delay costs money.",
+    "Arihan Enterprises was founded in [year] in [city] with [one/two] machines and a simple promise: show up on time and keep the work moving. Contractors kept calling us back, and the fleet grew with them.",
+    "Today we operate [XX]+ units — excavators, cranes, tippers and prime movers — across [states/regions]. We work with EPC contractors, infrastructure developers, oil & gas operators and logistics companies on projects where delays cost money.",
   ],
   different:
-    "Most rental companies hand over a machine and leave. We take on the work. Whether it is moving [X] lakh cubic metres of earth or lifting equipment at a plant, we plan the deployment, supply the crew and answer for the output.",
+    "Most rental companies hand over a machine and step away. Arihan takes on the work. Whether it's moving [X] lakh cubic metres of earth or lifting equipment at a plant, we plan the deployment, supply the crew and stay answerable for output.",
   mission:
-    "To be the machinery and execution partner that India's infrastructure and industrial projects can depend on, judged on uptime, safety and on-time delivery.",
+    "To be the most dependable machinery and execution partner for India's infrastructure and industrial projects — measured by uptime, safety and on-time delivery.",
   vision:
-    "To build a fleet and site-services network across India that project owners trust with their most critical work.",
+    "To build a pan-India fleet and site-services network that project owners trust with their most critical work packages.",
   values: [
     { title: "Reliability", body: "We commit only what we can deliver, and deliver what we commit." },
     { title: "Safety", body: "No deadline is worth an accident." },
@@ -451,7 +451,7 @@ export const safety = {
 export const careers = {
   why: [
     "Timely salary with EPF and ESIC benefits",
-    "Well-maintained machines, so fewer breakdowns and more working hours",
+    "Well-maintained machines — less breakdown, more work",
     "Accommodation and food support at project sites [where applicable]",
     "Growth from operator to supervisor to site in-charge",
   ],
@@ -474,7 +474,7 @@ export const faqs: Faq[] = [
   {
     question: "What is the minimum hire period?",
     answer:
-      "It depends on the machine: typically [8 hours] for excavators and [1 day] for cranes. Monthly and project-duration rates work out cheaper.",
+      "It depends on the machine — typically [8 hours] for excavators and [1 day] for cranes. Monthly and project-duration rates are more economical.",
   },
   {
     question: "Who pays for fuel?",
