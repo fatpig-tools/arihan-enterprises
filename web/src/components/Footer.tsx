@@ -40,10 +40,7 @@ export function Footer({ settings }: { settings: Settings }) {
       <div className="wrap tag flex flex-col gap-3 border-t border-mist/10 py-6 text-mist/50 md:flex-row md:justify-between">
         <p>© 2026 Arihan Enterprises. All rights reserved.</p>
         <p>
-          GSTIN: <Rich>{settings.gstin}</Rich> · Privacy Policy · Terms of Hire ·{" "}
-          <Link href="/credits" className="hover:text-accent">
-            Credits
-          </Link>
+          GSTIN: <Rich>{settings.gstin}</Rich> · Privacy Policy · Terms of Hire
         </p>
       </div>
     </footer>
