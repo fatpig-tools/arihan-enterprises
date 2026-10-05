@@ -1,7 +1,7 @@
 import * as content from "@/content/site";
 import { getClients, getCranes, getIndustries, getPage, getServices, getSettings } from "@/lib/data";
 import { pageMeta } from "@/lib/meta";
-import { HomeHero } from "@/components/home/HomeHero";
+import { ShowroomHero } from "@/components/home/ShowroomHero";
 import { OneContract } from "@/components/home/OneContract";
 import { ServicesBento } from "@/components/home/ServicesBento";
 import { WhyBento } from "@/components/home/WhyBento";
@@ -14,6 +14,7 @@ import { Process } from "@/components/Process";
 import { Cta } from "@/components/Cta";
 import { Button } from "@/components/Button";
 import { Reveal } from "@/components/Reveal";
+import { Loop } from "@/components/Media";
 
 export const generateMetadata = () => pageMeta("home", "/");
 
@@ -41,17 +42,32 @@ export default async function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-      <HomeHero headline={page.headline} intro={page.intro} />
+      <ShowroomHero intro={page.intro} />
+
+      {/* Short film: fleet capacity and how a job runs, rendered with HyperFrames */}
+      <section className="bg-ink py-20 md:py-28">
+        <div className="wrap">
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-mist/15 pb-6">
+            <p className="chip">
+              <span className="text-accent">Film</span> Arihan in fifteen seconds
+            </p>
+            <p className="tag text-mist/50">00:15 · No sound</p>
+          </div>
+          <div className="relative aspect-video overflow-hidden border border-mist/10 bg-ink-2">
+            <Loop src="/media/process-film.mp4" poster="/media/process-film-poster.jpg" />
+          </div>
+        </div>
+      </section>
 
       {/* Who we are */}
-      <section className="on-light rounded-t-[2rem] py-24 md:py-32">
+      <section className="on-light py-24 md:py-32">
         <div className="wrap">
           <div className="grid items-center gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
             <div>
               <p className="chip mb-6">Who we are</p>
               <SplitHeading
                 text="We don't just rent machines — we take *responsibility* for getting the work done."
-                className="text-[clamp(2.3rem,4.1vw,3.75rem)]"
+                className="text-[clamp(1.5rem,2.5vw,2.25rem)]"
               />
               <Reveal stagger className="mt-8 space-y-4">
                 <p className="lede muted">{sentences[0]}</p>
@@ -89,7 +105,7 @@ export default async function Home() {
       </section>
 
       {/* Fleet */}
-      <section className="on-light rounded-[2rem] py-24 md:py-32">
+      <section className="on-light py-24 md:py-32">
         <div className="wrap">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHead tag="Our fleet" title="Owned cranes, *45 to 100* tonnes" />

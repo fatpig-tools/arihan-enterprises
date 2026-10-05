@@ -98,7 +98,7 @@ export function OneContract() {
                 <span
                   key={item}
                   className={cn(
-                    "oc-pill rounded-full px-3 py-1.5 text-sm",
+                    "oc-pill px-3 py-1.5 text-sm",
                     i < row.upTo
                       ? row.upTo === 4
                         ? "bg-accent text-ink"

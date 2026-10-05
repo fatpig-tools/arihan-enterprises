@@ -37,12 +37,12 @@ export function Nav({ phone, email }: { phone: string; email: string }) {
   return (
     <>
       <motion.header
-        animate={{ y: hidden && !open ? "-140%" : "0%" }}
+        animate={{ y: hidden && !open ? "-100%" : "0%" }}
         transition={{ duration: 0.45, ease }}
-        className="fixed inset-x-0 top-4 z-50 text-mist"
+        className="fixed inset-x-0 top-0 z-50 border-b border-mist/10 bg-ink/80 text-mist backdrop-blur-xl"
       >
         <div className="wrap">
-          <div className="flex h-16 items-center justify-between gap-4 rounded-full border border-mist/12 bg-ink/70 pl-5 pr-2.5 backdrop-blur-xl">
+          <div className="flex h-18 items-center justify-between gap-4">
             <Link href="/" aria-label="Arihan Enterprises — home" onClick={() => setOpen(false)}>
               <Logo />
             </Link>
@@ -54,8 +54,8 @@ export function Nav({ phone, email }: { phone: string; email: string }) {
                   href={item.href}
                   aria-current={pathname === item.href ? "page" : undefined}
                   className={cn(
-                    "rounded-full px-3.5 py-2 text-[0.7rem] uppercase tracking-[0.18em] transition-colors hover:bg-mist/10",
-                    pathname === item.href ? "bg-mist/10 text-mist" : "text-mist/70",
+                    "px-3.5 py-2 text-[0.7rem] font-medium uppercase tracking-[0.16em] transition-colors hover:text-accent",
+                    pathname === item.href ? "text-accent" : "text-mist/70",
                   )}
                 >
                   {item.label}
@@ -66,7 +66,7 @@ export function Nav({ phone, email }: { phone: string; email: string }) {
             <div className="flex items-center gap-2">
               <Link
                 href="/contact"
-                className="hidden min-h-11 items-center rounded-full bg-accent px-5 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:bg-accent-deep sm:inline-flex"
+                className="hidden min-h-11 items-center bg-accent px-5 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:bg-accent-deep sm:inline-flex"
               >
                 Get a Quote
               </Link>
@@ -75,7 +75,7 @@ export function Nav({ phone, email }: { phone: string; email: string }) {
                 onClick={() => setOpen((v) => !v)}
                 aria-expanded={open}
                 aria-controls="site-menu"
-                className="flex size-11 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-full bg-mist/10 transition-colors hover:bg-mist/20"
+                className="flex size-11 cursor-pointer flex-col items-center justify-center gap-1.5 border border-mist/20 transition-colors hover:border-mist/60"
               >
                 <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
                 <motion.span animate={open ? { rotate: 45, y: 4 } : { rotate: 0, y: 0 }} className="h-0.5 w-4.5 rounded bg-current" />

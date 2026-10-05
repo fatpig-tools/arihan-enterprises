@@ -43,12 +43,12 @@ export function Sectors({ industries }: { industries: Industry[] }) {
             onPointerEnter={(e) => e.pointerType === "mouse" && setActive(i)}
             aria-pressed={active === i}
             className={cn(
-              "relative min-h-12 cursor-pointer rounded-full px-5 text-[0.95rem] transition-colors duration-200",
+              "relative min-h-12 cursor-pointer px-5 text-[0.95rem] transition-colors duration-200",
               active === i ? "text-ink" : "border border-mist/15 text-mist/70 hover:text-mist",
             )}
           >
             {active === i && (
-              <motion.span layoutId="sector-pill" className="absolute inset-0 rounded-full bg-accent" transition={{ type: "spring", stiffness: 400, damping: 34 }} />
+              <motion.span layoutId="sector-pill" className="absolute inset-0 bg-accent" transition={{ type: "spring", stiffness: 400, damping: 34 }} />
             )}
             <span className="relative">{industry.title}</span>
           </button>

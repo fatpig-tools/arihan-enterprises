@@ -38,9 +38,10 @@ Projects and testimonials appear once they are added in the Studio.
 
 | What | Where |
 | --- | --- |
-| Design tokens and type (Cormorant Garamond with italic emphasis, Jost) | `web/src/app/globals.css` |
+| Design tokens and type (Panchang + Switzer, self-hosted in `web/src/fonts/`) | `web/src/app/globals.css` |
 | Footage and photos (Pexels; credits in `CREDITS.md`) | `web/public/media/` |
-| Scroll-to-lift hero (SVG elevation drawing) | `web/src/components/home/HomeHero.tsx` |
+| 3D showroom hero (clay tipper on a turntable) | `web/src/components/three/Showroom.tsx`, `web/public/models/` |
+| HyperFrames film (source; render with `npx hyperframes render`) | `web/films/process-film/` → `web/public/media/process-film.mp4` |
 | Lottie icons (generated) | `node web/scripts/make-lottie.mjs` → `web/src/lottie/` |
 | Scroll animation helpers | `web/src/components/{Reveal,SplitHeading,Counter,Process}.tsx` |
 | Quote form and API route | `web/src/components/QuoteForm.tsx`, `web/src/app/api/quote/route.ts` |

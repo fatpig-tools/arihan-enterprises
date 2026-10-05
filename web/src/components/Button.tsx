@@ -43,15 +43,13 @@ export function Button({ href, children, variant = "solid", className, external 
       style={{ x, y }}
       whileTap={{ scale: 0.97 }}
       className={cn(
-        "group inline-flex min-h-12 cursor-pointer items-center gap-3 rounded-full py-1.5 pl-6 pr-1.5 text-[0.75rem] font-medium uppercase tracking-[0.18em] transition-colors duration-200",
+        "group inline-flex min-h-12 cursor-pointer items-center gap-4 px-6 text-[0.75rem] font-medium uppercase tracking-[0.16em] transition-colors duration-200",
         styles[variant],
         className,
       )}
     >
       {children}
-      <span className="flex size-9 items-center justify-center rounded-full bg-white/15 transition-transform duration-300 group-hover:rotate-45">
-        <ArrowUpRight aria-hidden="true" className="size-4" />
-      </span>
+      <ArrowUpRight aria-hidden="true" className="size-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
     </motion.span>
   );
 

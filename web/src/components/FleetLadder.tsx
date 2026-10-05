@@ -41,7 +41,7 @@ export function FleetLadder({ cranes }: { cranes: Crane[] }) {
               ))}
             </div>
             <div
-              className="fl-bar relative h-3 w-(--v) rounded-full bg-accent md:h-(--v) md:w-24 md:rounded-b-none md:rounded-t-2xl"
+              className="fl-bar relative h-3 w-(--v) bg-accent md:h-(--v) md:w-24"
               style={{ "--v": `${(crane.capacityTonnes / max) * 100}%` } as React.CSSProperties}
             />
           </div>
